@@ -7,7 +7,9 @@
   "license": "GNU",
   "type": "module",
   "keywords": [
-    "vite-plugin"
+    "vite-plugin",
+    "middleware",
+    "Terry Pratchett"
   ],
   "repository": {
     "type": "git",
