@@ -4,7 +4,7 @@
   "description": "A Vite plugin to add custom X-Clacks-Overhead headers.",
   "main": "index.js",
   "author": "https://github.com/dotfortun",
-  "license": "ISC",
+  "license": "GNU",
   "type": "module",
   "keywords": [
     "vite-plugin"
