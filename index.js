@@ -6,7 +6,7 @@ export default function xClacksOverhead(
     custom: null,
   },
 ) {
-  opts = {
+  const full_opts = {
     ...{
       names: ["Terry Pratchett"],
       memoriam_str: "GNU",
@@ -22,9 +22,9 @@ export default function xClacksOverhead(
       server.middlewares.use((_req, res, next) => {
         res.setHeader(
           "X-Clacks-Overhead",
-          opts.custom
-            ? opts.custom
-            : `${opts.memoriam_str} ${opts.names.join(opts.seperator)}.`,
+          full_opts.custom
+            ? full_opts.custom
+            : `${full_opts.memoriam_str} ${full_opts.names.join(opts.seperator)}.`,
         );
         next();
       });
