@@ -6,6 +6,16 @@ export default function xClacksOverhead(
     custom: null,
   },
 ) {
+  opts = {
+    ...{
+      names: ["Terry Pratchett"],
+      memoriam_str: "GNU",
+      seperator: ", ",
+      custom: null,
+    },
+    ...opts,
+  };
+
   return {
     name: "x-clacks-overhead",
     configureServer: async (server) => {
