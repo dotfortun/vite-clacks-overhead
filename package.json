@@ -3,10 +3,7 @@
   "version": "0.0.1",
   "description": "A Vite plugin to add custom X-Clacks-Overhead headers.",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "author": "",
+  "author": "https://github.com/dotfortun",
   "license": "ISC",
   "type": "module",
   "keywords": [
@@ -15,5 +12,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dotfortun/vite-clacks-overhead.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dotfortun/vite-clacks-overhead/issues"
+  },
+  "peerDependencies": {
+    "vite": "^7.0.0"
   }
 }
