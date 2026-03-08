@@ -2,6 +2,10 @@
 
 A simple Vite plugin to send X-Clacks-Overhead headers.
 
+## Installation
+
+`npm i vite-clacks-overhead`
+
 ## Usage
 
 Import the plugin in your `vite.config.js`, and add to your plugins.
