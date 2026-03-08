@@ -14,7 +14,7 @@ export default function xClacksOverhead(
           "X-Clacks-Overhead",
           opts.custom
             ? opts.custom
-            : `${opts.memoriam_str} ${opts.name.join(opts.seperator)}.`,
+            : `${opts.memoriam_str} ${opts.names.join(opts.seperator)}.`,
         );
         next();
       });
