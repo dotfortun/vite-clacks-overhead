@@ -22,21 +22,21 @@ export default function xClacksOverhead(
           };
 
           if (typeof full_opts.names !== Array) {
-            throw TypeError(
+            throw new TypeError(
               "Names for the clacks must be an array of strings.",
             );
           }
 
           if (typeof full_opts.memoriam_str !== String) {
-            throw TypeError("The memoriam string must be a string.");
+            throw new TypeError("The memoriam string must be a string.");
           }
 
           if (typeof full_opts.seperator !== String) {
-            throw TypeError("The seperator must be a string.");
+            throw new TypeError("The seperator must be a string.");
           }
 
           if (![typeof null, String].includes(typeof full_opts.seperator)) {
-            throw TypeError("Custom messages must be a string.");
+            throw new TypeError("Custom messages must be a string.");
           }
 
           res.setHeader(
@@ -46,9 +46,7 @@ export default function xClacksOverhead(
               : `${full_opts.memoriam_str} ${full_opts.names.join(opts.seperator)}.`,
           );
         } catch (err) {
-          throw Error("Unable to set X-Clacks-Overhead header.", {
-            cause: err,
-          });
+          console.error(err);
         } finally {
           next();
         }
