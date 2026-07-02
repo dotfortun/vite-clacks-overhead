@@ -19,6 +19,6 @@
     "url": "https://github.com/dotfortun/vite-clacks-overhead/issues"
   },
   "peerDependencies": {
-    "vite": "^4 || ^5 || ^6 || ^7"
+    "vite": "^4 || ^5 || ^6 || ^7 || ^8"
   }
 }
